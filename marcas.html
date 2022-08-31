@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <title>Marcas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1><strong>CH CAR</strong></h1>
+    <h2>MARCAS DE CARRO</h2>
+
+    <ul id="marcasDeCarro" >
+       
+    </ul>
+
+    <button onclick="botao()">Clique!</button>
+    
+    <script>
+        var marquinhas = ['fiat', 'bmw', 'mercedes','audi','honda']
+        function botao(){
+            alert("Mostrando marcas!")
+            
+            let ids = document.getElementById("marcasDeCarro")
+
+            marquinhas.forEach((item)=>{
+                    var listas = document.createElement('li')
+                    listas.innerText = item
+                    ids.appendChild(listas)
+                }
+            ) 
+       }
+    </script>
+
+</body>
+</html>
